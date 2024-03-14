@@ -18,5 +18,4 @@ let dato=[];
 
 
 
-    console.log(flash.getName!());
 })()
