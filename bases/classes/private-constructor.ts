@@ -20,5 +20,5 @@
 
     // const apocalipsis=new Apocalipsis('Soy un Apocalipsis..., el unnico');
  const apocalipsis=Apocalipsis.callApocalipsis();
-    console.log(apocalipsis);
+    // console.log(apocalipsis);
 })()
