@@ -20,9 +20,9 @@
     }
 
 
-    const antman:Avenger=new  Avenger('goku','guerreros z','son goku');
-    console.log(antman);
-    console.log(Avenger.avgAge);
-    console.log(Avenger.getAvgAge());
+    // const antman:Avenger=new  Avenger('goku','guerreros z','son goku');
+    // console.log(antman);
+    // console.log(Avenger.avgAge);
+    // console.log(Avenger.getAvgAge());
 
 })()

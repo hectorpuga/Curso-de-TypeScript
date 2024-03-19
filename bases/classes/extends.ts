@@ -34,9 +34,9 @@
 
     }
 
-    const wolverine= new Xmen(true,'Wolverine','Logan');
+    // const wolverine= new Xmen(true,'Wolverine','Logan');
 
-    wolverine.fullName='Hector';
+    // wolverine.fullName='Hector';
     // console.log(wolverine.fullname);
     
 

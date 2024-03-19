@@ -6,7 +6,24 @@
             this.realName = realName;
         }
     }
-    const wolverine = new Mutante('Wolverine', 'Logan');
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return 'Mundo salvado';
+        }
+    }
+    class Villanos extends Mutante {
+        consquitarMundo() {
+            return 'Mundo conquistado';
+        }
+    }
+    // const wolverine=new Xmen ('Wolverine','Logan');
+    // const magneto= new Villanos('Magneto','Magnus');
+    // // console.log(wolverine.salvarMundo());
+    // // console.log(magneto.consquitarMundo());
+    // const printName=(character:Mutante)=>{
+    //     console.log(character.realName);
+    // }
+    // printName(wolverine)
 })();
 (() => {
     class Avenger {
@@ -26,10 +43,10 @@
     // private team: string;
     // public realName?: string;
     Avenger.avgAge = 35;
-    const antman = new Avenger('goku', 'guerreros z', 'son goku');
-    console.log(antman);
-    console.log(Avenger.avgAge);
-    console.log(Avenger.getAvgAge());
+    // const antman:Avenger=new  Avenger('goku','guerreros z','son goku');
+    // console.log(antman);
+    // console.log(Avenger.avgAge);
+    // console.log(Avenger.getAvgAge());
 })();
 (() => {
     class Avenger {
@@ -57,8 +74,27 @@
             this.name = name;
         }
     }
-    const wolverine = new Xmen(true, 'Wolverine', 'Logan');
-    wolverine.fullName = 'Hector';
+    // const wolverine= new Xmen(true,'Wolverine','Logan');
+    // wolverine.fullName='Hector';
     // console.log(wolverine.fullname);
+})();
+(() => {
+    class Apocalipsis {
+        constructor(name) {
+            this.name = name;
+        }
+        static callApocalipsis() {
+            if (!Apocalipsis.instance) {
+                Apocalipsis.instance = new Apocalipsis('Soy Apocalipsis el unico');
+            }
+            return Apocalipsis.instance;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    // const apocalipsis=new Apocalipsis('Soy un Apocalipsis..., el unnico');
+    const apocalipsis = Apocalipsis.callApocalipsis();
+    console.log(apocalipsis);
 })();
 //# sourceMappingURL=main.js.map
